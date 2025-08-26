@@ -32,7 +32,7 @@
         "RECORD_AUDIO"
       ]
     },
-    "web": { 
+    "web": {
       "favicon": "./assets/images/favicon.png",
       "bundler": "metro",
       "output": "static",
