@@ -4,15 +4,9 @@
     "slug": "wplchmy-ai-restaurant-self-ordering-with-qr",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/images/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "app.rork.wplchmy-ai-restaurant-self-ordering-with-qr",
@@ -22,10 +16,6 @@
       }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
       "package": "app.rork.wplchmy-ai-restaurant-self-ordering-with-qr",
       "permissions": [
         "CAMERA",
@@ -33,14 +23,8 @@
       ]
     },
     "web": {
-      "favicon": "./assets/images/favicon.png",
       "bundler": "metro",
-      "output": "static",
-      "build": {
-        "babel": {
-          "include": ["**/*"]
-        }
-      }
+      "output": "static"
     },
     "plugins": [
       [
