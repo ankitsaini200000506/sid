@@ -2,11 +2,16 @@ import { Tabs } from "expo-router";
 import { Home, Menu, ShoppingCart, Shield } from "lucide-react-native";
 import React from "react";
 import { useCart } from "@/store/cart-store";
+import { usePathname } from "expo-router";
 
 import Colors from "@/constants/colors";
 
 export default function TabLayout() {
   const { itemCount } = useCart();
+  const pathname = usePathname();
+
+  // Hide bottom navigation on home page
+  const isHomePage = pathname === "/" || pathname === "/(tabs)" || pathname === "/(tabs)/";
 
   return (
     <Tabs
@@ -20,6 +25,7 @@ export default function TabLayout() {
           paddingBottom: 8,
           paddingTop: 8,
           height: 80,
+          display: isHomePage ? 'none' : 'flex',
         },
       }}
     >
